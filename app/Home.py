@@ -9,8 +9,8 @@ from pathlib import Path
 
 import streamlit as st
 
-# DEPLOY: set this to your deployed landing-site URL, e.g. "https://greenwings.netlify.app"
-LANDING_URL = "http://localhost:8600"
+# DEPLOY: the public landing-site URL (GitHub Pages).
+LANDING_URL = "https://greenwingsai.github.io"
 
 st.set_page_config(page_title="GreenWings AI", page_icon="✈️", layout="wide")
 
