@@ -1,0 +1,1224 @@
+{
+  "model": "HistGradientBoostingRegressor (sklearn)",
+  "target": "full-flight fuel burn (kg), ACARS-measured, coverage-scaled",
+  "features": [
+    "aircraft_type",
+    "origin_icao",
+    "destination_icao",
+    "distance_km",
+    "duration_hr",
+    "month",
+    "dow"
+  ],
+  "train_rows": 5829,
+  "test_rows": 2036,
+  "split": "temporal + phase \u2014 trained on Apr-Aug 2025 (train phase), evaluated on the never-seen Sep-Oct 2025 flights (rank + final phases)",
+  "rmse_kg": 3802.7,
+  "mae_kg": 1640.2,
+  "median_ape_pct": 13.5,
+  "r2": 0.959,
+  "baseline_rmse_kg": 4077.6,
+  "rmse_improvement_vs_baseline_pct": 6.7,
+  "test_pred_sample": [
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3989.0,
+      "predicted_kg": 4372.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2753.0,
+      "actual_kg": 2935.0,
+      "predicted_kg": 4051.0
+    },
+    {
+      "aircraft_type": "A21N",
+      "distance_km": 1290.0,
+      "actual_kg": 4476.0,
+      "predicted_kg": 5393.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 4556.0,
+      "actual_kg": 6514.0,
+      "predicted_kg": 7338.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 4799.0,
+      "actual_kg": 6780.0,
+      "predicted_kg": 6968.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2641.0,
+      "actual_kg": 10367.0,
+      "predicted_kg": 9882.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3926.0,
+      "predicted_kg": 4511.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2853.0,
+      "actual_kg": 11541.0,
+      "predicted_kg": 10852.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2726.0,
+      "actual_kg": 4354.0,
+      "predicted_kg": 4552.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3057.0,
+      "actual_kg": 11855.0,
+      "predicted_kg": 11684.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2674.0,
+      "actual_kg": 10730.0,
+      "predicted_kg": 9319.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2753.0,
+      "actual_kg": 3779.0,
+      "predicted_kg": 4421.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1509.0,
+      "actual_kg": 1685.0,
+      "predicted_kg": 2014.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1651.0,
+      "actual_kg": 1926.0,
+      "predicted_kg": 1784.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 1504.0,
+      "actual_kg": 3309.0,
+      "predicted_kg": 4341.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2072.0,
+      "actual_kg": 7671.0,
+      "predicted_kg": 5548.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2726.0,
+      "actual_kg": 2854.0,
+      "predicted_kg": 4039.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1805.0,
+      "actual_kg": 2506.0,
+      "predicted_kg": 1965.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2741.0,
+      "actual_kg": 2905.0,
+      "predicted_kg": 4124.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1397.0,
+      "actual_kg": 3329.0,
+      "predicted_kg": 3035.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 1244.0,
+      "actual_kg": 5466.0,
+      "predicted_kg": 4755.0
+    },
+    {
+      "aircraft_type": "B789",
+      "distance_km": 11462.0,
+      "actual_kg": 4065.0,
+      "predicted_kg": 58988.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1805.0,
+      "actual_kg": 3904.0,
+      "predicted_kg": 3749.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2011.0,
+      "actual_kg": 6440.0,
+      "predicted_kg": 4337.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2745.0,
+      "actual_kg": 11641.0,
+      "predicted_kg": 10473.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1397.0,
+      "actual_kg": 4038.0,
+      "predicted_kg": 2183.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3057.0,
+      "actual_kg": 12807.0,
+      "predicted_kg": 11684.0
+    },
+    {
+      "aircraft_type": "A321",
+      "distance_km": 2174.0,
+      "actual_kg": 6672.0,
+      "predicted_kg": 8314.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2741.0,
+      "actual_kg": 4117.0,
+      "predicted_kg": 4318.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2011.0,
+      "actual_kg": 1963.0,
+      "predicted_kg": 2635.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3258.0,
+      "predicted_kg": 4356.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3370.0,
+      "actual_kg": 4033.0,
+      "predicted_kg": 5208.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3358.0,
+      "actual_kg": 3949.0,
+      "predicted_kg": 5250.0
+    },
+    {
+      "aircraft_type": "B738",
+      "distance_km": 2701.0,
+      "actual_kg": 7756.0,
+      "predicted_kg": 8103.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2753.0,
+      "actual_kg": 2815.0,
+      "predicted_kg": 4045.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 12061.0,
+      "actual_kg": 75993.0,
+      "predicted_kg": 73150.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2657.0,
+      "actual_kg": 2904.0,
+      "predicted_kg": 4028.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2641.0,
+      "actual_kg": 4235.0,
+      "predicted_kg": 4344.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 4199.0,
+      "predicted_kg": 4517.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2853.0,
+      "actual_kg": 10625.0,
+      "predicted_kg": 10746.0
+    },
+    {
+      "aircraft_type": "B738",
+      "distance_km": 2666.0,
+      "actual_kg": 7463.0,
+      "predicted_kg": 8020.0
+    },
+    {
+      "aircraft_type": "B77W",
+      "distance_km": 9551.0,
+      "actual_kg": 88214.0,
+      "predicted_kg": 93835.0
+    },
+    {
+      "aircraft_type": "B77W",
+      "distance_km": 10415.0,
+      "actual_kg": 95639.0,
+      "predicted_kg": 141589.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 9368.0,
+      "actual_kg": 67232.0,
+      "predicted_kg": 68890.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 8892.0,
+      "actual_kg": 57372.0,
+      "predicted_kg": 59923.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3358.0,
+      "actual_kg": 9526.0,
+      "predicted_kg": 5185.0
+    },
+    {
+      "aircraft_type": "B738",
+      "distance_km": 2701.0,
+      "actual_kg": 12590.0,
+      "predicted_kg": 10573.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2753.0,
+      "actual_kg": 3926.0,
+      "predicted_kg": 4415.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 8373.0,
+      "actual_kg": 59004.0,
+      "predicted_kg": 61054.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2657.0,
+      "actual_kg": 3879.0,
+      "predicted_kg": 4490.0
+    },
+    {
+      "aircraft_type": "B738",
+      "distance_km": 2666.0,
+      "actual_kg": 12501.0,
+      "predicted_kg": 11368.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 1321.0,
+      "actual_kg": 3879.0,
+      "predicted_kg": 3615.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2106.0,
+      "actual_kg": 6431.0,
+      "predicted_kg": 5315.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2367.0,
+      "actual_kg": 8614.0,
+      "predicted_kg": 9305.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2741.0,
+      "actual_kg": 6220.0,
+      "predicted_kg": 4118.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1244.0,
+      "actual_kg": 1327.0,
+      "predicted_kg": 1777.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 1509.0,
+      "actual_kg": 7467.0,
+      "predicted_kg": 6384.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2501.0,
+      "actual_kg": 2737.0,
+      "predicted_kg": 3477.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1504.0,
+      "actual_kg": 4694.0,
+      "predicted_kg": 3290.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3057.0,
+      "actual_kg": 11940.0,
+      "predicted_kg": 11941.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2741.0,
+      "actual_kg": 3674.0,
+      "predicted_kg": 4312.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2501.0,
+      "actual_kg": 2963.0,
+      "predicted_kg": 4231.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3250.0,
+      "predicted_kg": 4353.0
+    },
+    {
+      "aircraft_type": "B738",
+      "distance_km": 2729.0,
+      "actual_kg": 8682.0,
+      "predicted_kg": 8430.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2641.0,
+      "actual_kg": 11163.0,
+      "predicted_kg": 9873.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 4080.0,
+      "predicted_kg": 4515.0
+    },
+    {
+      "aircraft_type": "B738",
+      "distance_km": 1152.0,
+      "actual_kg": 5223.0,
+      "predicted_kg": 3402.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 9757.0,
+      "actual_kg": 63726.0,
+      "predicted_kg": 69033.0
+    },
+    {
+      "aircraft_type": "B738",
+      "distance_km": 2180.0,
+      "actual_kg": 11448.0,
+      "predicted_kg": 10676.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3487.0,
+      "predicted_kg": 4353.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1651.0,
+      "actual_kg": 3820.0,
+      "predicted_kg": 1775.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 1509.0,
+      "actual_kg": 3823.0,
+      "predicted_kg": 4332.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2072.0,
+      "actual_kg": 2641.0,
+      "predicted_kg": 2858.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3655.0,
+      "actual_kg": 11216.0,
+      "predicted_kg": 9755.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3480.0,
+      "actual_kg": 8476.0,
+      "predicted_kg": 6382.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1397.0,
+      "actual_kg": 1666.0,
+      "predicted_kg": 3120.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 1509.0,
+      "actual_kg": 6332.0,
+      "predicted_kg": 6389.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2072.0,
+      "actual_kg": 2872.0,
+      "predicted_kg": 4179.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 4760.0,
+      "predicted_kg": 4515.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1397.0,
+      "actual_kg": 1533.0,
+      "predicted_kg": 1844.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3480.0,
+      "actual_kg": 5625.0,
+      "predicted_kg": 5681.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3057.0,
+      "actual_kg": 13561.0,
+      "predicted_kg": 11939.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3609.0,
+      "predicted_kg": 4190.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2719.0,
+      "actual_kg": 8017.0,
+      "predicted_kg": 7253.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1805.0,
+      "actual_kg": 4025.0,
+      "predicted_kg": 3727.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3370.0,
+      "actual_kg": 10606.0,
+      "predicted_kg": 10124.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 7669.0,
+      "predicted_kg": 4190.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3358.0,
+      "actual_kg": 3648.0,
+      "predicted_kg": 5276.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2674.0,
+      "actual_kg": 10168.0,
+      "predicted_kg": 9310.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2641.0,
+      "actual_kg": 4082.0,
+      "predicted_kg": 4407.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 4796.0,
+      "predicted_kg": 4539.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2879.0,
+      "actual_kg": 3679.0,
+      "predicted_kg": 4509.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2719.0,
+      "actual_kg": 10734.0,
+      "predicted_kg": 9806.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3370.0,
+      "actual_kg": 14008.0,
+      "predicted_kg": 13172.0
+    },
+    {
+      "aircraft_type": "A332",
+      "distance_km": 1805.0,
+      "actual_kg": 22329.0,
+      "predicted_kg": 25316.0
+    },
+    {
+      "aircraft_type": "B788",
+      "distance_km": 8645.0,
+      "actual_kg": 45265.0,
+      "predicted_kg": 46036.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 8219.0,
+      "actual_kg": 45162.0,
+      "predicted_kg": 60344.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3358.0,
+      "actual_kg": 4954.0,
+      "predicted_kg": 5206.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 8892.0,
+      "actual_kg": 63603.0,
+      "predicted_kg": 60032.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 12598.0,
+      "actual_kg": 85306.0,
+      "predicted_kg": 85318.0
+    },
+    {
+      "aircraft_type": "B789",
+      "distance_km": 8016.0,
+      "actual_kg": 55968.0,
+      "predicted_kg": 56813.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 6760.0,
+      "actual_kg": 48906.0,
+      "predicted_kg": 37571.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2072.0,
+      "actual_kg": 2657.0,
+      "predicted_kg": 2781.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 1638.0,
+      "actual_kg": 7347.0,
+      "predicted_kg": 4880.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3057.0,
+      "actual_kg": 8253.0,
+      "predicted_kg": 9055.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2072.0,
+      "actual_kg": 4462.0,
+      "predicted_kg": 4179.0
+    },
+    {
+      "aircraft_type": "A319",
+      "distance_km": 3822.0,
+      "actual_kg": 16334.0,
+      "predicted_kg": 16480.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2011.0,
+      "actual_kg": 3549.0,
+      "predicted_kg": 4298.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 4799.0,
+      "actual_kg": 12242.0,
+      "predicted_kg": 8884.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 4556.0,
+      "actual_kg": 11629.0,
+      "predicted_kg": 7243.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2011.0,
+      "actual_kg": 3758.0,
+      "predicted_kg": 2630.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2641.0,
+      "actual_kg": 2757.0,
+      "predicted_kg": 3791.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3319.0,
+      "predicted_kg": 4360.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3370.0,
+      "actual_kg": 10804.0,
+      "predicted_kg": 10147.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2996.0,
+      "actual_kg": 7095.0,
+      "predicted_kg": 4798.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1638.0,
+      "actual_kg": 4484.0,
+      "predicted_kg": 1700.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3370.0,
+      "actual_kg": 10790.0,
+      "predicted_kg": 10147.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2789.0,
+      "actual_kg": 3063.0,
+      "predicted_kg": 3983.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2641.0,
+      "actual_kg": 4972.0,
+      "predicted_kg": 4402.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 6930.0,
+      "predicted_kg": 4184.0
+    },
+    {
+      "aircraft_type": "B752",
+      "distance_km": 1201.0,
+      "actual_kg": 10673.0,
+      "predicted_kg": 9934.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3057.0,
+      "actual_kg": 9449.0,
+      "predicted_kg": 8892.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3549.0,
+      "actual_kg": 10001.0,
+      "predicted_kg": 10095.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3370.0,
+      "actual_kg": 7906.0,
+      "predicted_kg": 5257.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 4871.0,
+      "predicted_kg": 4548.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2996.0,
+      "actual_kg": 4973.0,
+      "predicted_kg": 4407.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2789.0,
+      "actual_kg": 4364.0,
+      "predicted_kg": 4327.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3370.0,
+      "actual_kg": 14408.0,
+      "predicted_kg": 13195.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3370.0,
+      "actual_kg": 14289.0,
+      "predicted_kg": 13195.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 9757.0,
+      "actual_kg": 70352.0,
+      "predicted_kg": 70190.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3370.0,
+      "actual_kg": 5034.0,
+      "predicted_kg": 5245.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2789.0,
+      "actual_kg": 3127.0,
+      "predicted_kg": 3983.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2072.0,
+      "actual_kg": 2610.0,
+      "predicted_kg": 2793.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2726.0,
+      "actual_kg": 2993.0,
+      "predicted_kg": 4025.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1805.0,
+      "actual_kg": 5797.0,
+      "predicted_kg": 2105.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3057.0,
+      "actual_kg": 9582.0,
+      "predicted_kg": 8892.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1397.0,
+      "actual_kg": 1809.0,
+      "predicted_kg": 3044.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 9368.0,
+      "actual_kg": 72231.0,
+      "predicted_kg": 74984.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1638.0,
+      "actual_kg": 2381.0,
+      "predicted_kg": 1700.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2154.0,
+      "actual_kg": 2888.0,
+      "predicted_kg": 3997.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2072.0,
+      "actual_kg": 5145.0,
+      "predicted_kg": 4174.0
+    },
+    {
+      "aircraft_type": "A333",
+      "distance_km": 522.0,
+      "actual_kg": 3043.0,
+      "predicted_kg": 4106.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1805.0,
+      "actual_kg": 3700.0,
+      "predicted_kg": 3735.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2011.0,
+      "actual_kg": 6736.0,
+      "predicted_kg": 4293.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1397.0,
+      "actual_kg": 1540.0,
+      "predicted_kg": 1990.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3655.0,
+      "actual_kg": 5515.0,
+      "predicted_kg": 5974.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3057.0,
+      "actual_kg": 13119.0,
+      "predicted_kg": 11704.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2011.0,
+      "actual_kg": 1988.0,
+      "predicted_kg": 2624.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2641.0,
+      "actual_kg": 2478.0,
+      "predicted_kg": 3776.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2674.0,
+      "actual_kg": 7111.0,
+      "predicted_kg": 7233.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3634.0,
+      "predicted_kg": 4345.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3370.0,
+      "actual_kg": 9910.0,
+      "predicted_kg": 10147.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1805.0,
+      "actual_kg": 3962.0,
+      "predicted_kg": 3749.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3428.0,
+      "predicted_kg": 4394.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3494.0,
+      "predicted_kg": 4394.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3370.0,
+      "actual_kg": 7270.0,
+      "predicted_kg": 5257.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 4761.0,
+      "predicted_kg": 4518.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3370.0,
+      "actual_kg": 13686.0,
+      "predicted_kg": 13177.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 10666.0,
+      "actual_kg": 71996.0,
+      "predicted_kg": 63693.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 12598.0,
+      "actual_kg": 83714.0,
+      "predicted_kg": 85162.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 4364.0,
+      "actual_kg": 4880.0,
+      "predicted_kg": 6484.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 2830.0,
+      "predicted_kg": 4394.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 7865.0,
+      "actual_kg": 64244.0,
+      "predicted_kg": 62869.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1805.0,
+      "actual_kg": 2321.0,
+      "predicted_kg": 1940.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1805.0,
+      "actual_kg": 2670.0,
+      "predicted_kg": 1940.0
+    },
+    {
+      "aircraft_type": "A332",
+      "distance_km": 2230.0,
+      "actual_kg": 18389.0,
+      "predicted_kg": 17463.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2646.0,
+      "actual_kg": 6034.0,
+      "predicted_kg": 4013.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3057.0,
+      "actual_kg": 10177.0,
+      "predicted_kg": 8877.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 7865.0,
+      "actual_kg": 65290.0,
+      "predicted_kg": 61746.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2501.0,
+      "actual_kg": 2946.0,
+      "predicted_kg": 4072.0
+    },
+    {
+      "aircraft_type": "A321",
+      "distance_km": 2579.0,
+      "actual_kg": 9528.0,
+      "predicted_kg": 7835.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 4263.0,
+      "predicted_kg": 4548.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1805.0,
+      "actual_kg": 3414.0,
+      "predicted_kg": 3719.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2011.0,
+      "actual_kg": 7602.0,
+      "predicted_kg": 7466.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2239.0,
+      "actual_kg": 7567.0,
+      "predicted_kg": 7262.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2745.0,
+      "actual_kg": 4493.0,
+      "predicted_kg": 4721.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2646.0,
+      "actual_kg": 3741.0,
+      "predicted_kg": 4351.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3480.0,
+      "actual_kg": 5116.0,
+      "predicted_kg": 5812.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3045.0,
+      "actual_kg": 7744.0,
+      "predicted_kg": 9041.0
+    },
+    {
+      "aircraft_type": "A321",
+      "distance_km": 2579.0,
+      "actual_kg": 8603.0,
+      "predicted_kg": 9160.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2501.0,
+      "actual_kg": 3172.0,
+      "predicted_kg": 4194.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2011.0,
+      "actual_kg": 4657.0,
+      "predicted_kg": 5191.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3521.0,
+      "predicted_kg": 4313.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 1510.0,
+      "actual_kg": 6680.0,
+      "predicted_kg": 6165.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3340.0,
+      "predicted_kg": 4138.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3450.0,
+      "predicted_kg": 4108.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3370.0,
+      "actual_kg": 9619.0,
+      "predicted_kg": 10139.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 2753.0,
+      "actual_kg": 8046.0,
+      "predicted_kg": 7474.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 4367.0,
+      "actual_kg": 10207.0,
+      "predicted_kg": 7423.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2996.0,
+      "actual_kg": 4543.0,
+      "predicted_kg": 4384.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 4477.0,
+      "predicted_kg": 4541.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 8086.0,
+      "actual_kg": 26897.0,
+      "predicted_kg": 57816.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 4766.0,
+      "predicted_kg": 4523.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3370.0,
+      "actual_kg": 13898.0,
+      "predicted_kg": 13187.0
+    },
+    {
+      "aircraft_type": "A320",
+      "distance_km": 3822.0,
+      "actual_kg": 14173.0,
+      "predicted_kg": 13416.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 3057.0,
+      "actual_kg": 3523.0,
+      "predicted_kg": 4313.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1509.0,
+      "actual_kg": 1692.0,
+      "predicted_kg": 2031.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 1651.0,
+      "actual_kg": 1875.0,
+      "predicted_kg": 1618.0
+    },
+    {
+      "aircraft_type": "A20N",
+      "distance_km": 2154.0,
+      "actual_kg": 5560.0,
+      "predicted_kg": 3314.0
+    },
+    {
+      "aircraft_type": "A359",
+      "distance_km": 7865.0,
+      "actual_kg": 62790.0,
+      "predicted_kg": 61910.0
+    }
+  ]
+}

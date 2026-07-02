@@ -1,0 +1,20 @@
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Large raw dataset: NOT needed at runtime (app reads app/data_cache/) ---
+# Keep only airports.parquet; exclude the 4.9 GB ZIPs, extracted trajectories,
+# and the big per-phase parquet files.
+Dataset/*
+!Dataset/airports.parquet
+
+# --- misc ---
+*.log
