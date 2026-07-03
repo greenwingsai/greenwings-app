@@ -51,9 +51,10 @@ a.gw-home img{ height:44px; width:auto; }
 </style>
 """, unsafe_allow_html=True)
 
-# Clickable logo -> Home (landing). Rendered by the router at the top of every page.
+# Clickable logo -> Home (landing). target=_top escapes any iframe and navigates
+# the whole browser tab to the landing site (not the app root).
 if _logo_uri:
-    st.markdown(f'<a class="gw-home" href="{LANDING_URL}" target="_self" title="Home">'
+    st.markdown(f'<a class="gw-home" href="{LANDING_URL}" target="_top" rel="noopener" title="Back to Home">'
                 f'<img src="{_logo_uri}" alt="GreenWings AI - Home"></a>', unsafe_allow_html=True)
 
 # ---------------- tools only (clean URLs, back-link via logo) ------------
