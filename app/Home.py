@@ -39,10 +39,20 @@ section[data-testid="stSidebar"]{ border-right:1px solid var(--line); background
 #MainMenu{ visibility:hidden; }
 footer{ visibility:hidden; }
 [data-testid="stDecoration"]{ display:none; }
-.block-container{ padding-top:2.4rem; }
+.block-container{ padding-top:3.4rem; }
 hr{ border-color:var(--line); }
+/* persistent Back-to-Home link, visible on every page incl. mobile */
+.gw-home{ position:fixed; top:10px; right:14px; z-index:1000;
+  background:var(--accent); color:#fff !important; text-decoration:none;
+  font-family:'Oswald',sans-serif; font-weight:600; font-size:.9rem;
+  padding:.42rem .9rem; border-radius:999px; box-shadow:0 2px 10px rgba(11,18,32,.18); }
+.gw-home:hover{ background:var(--accent-ink); }
 </style>
 """, unsafe_allow_html=True)
+
+# Persistent "Back to Home" button (mobile-friendly; the sidebar logo is hidden when collapsed)
+st.markdown(f'<a class="gw-home" href="{LANDING_URL}" target="_self">← Home</a>',
+            unsafe_allow_html=True)
 
 # ---------------- tools only (clean URLs, back-link via logo) ------------
 pages = [
