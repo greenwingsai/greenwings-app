@@ -5,6 +5,7 @@ The marketing / business-case material lives on the static landing site
 links back to the landing. Chrome is hidden and the theme matches the landing
 (Oswald headings, Open Sans body, green accent).
 """
+import base64
 from pathlib import Path
 
 import streamlit as st
@@ -12,11 +13,14 @@ import streamlit as st
 # DEPLOY: the public landing-site URL (GitHub Pages).
 LANDING_URL = "https://greenwingsai.github.io"
 
-st.set_page_config(page_title="GreenWings AI", page_icon="✈️", layout="wide")
+st.set_page_config(page_title="GreenWings AI", page_icon="✈️", layout="wide",
+                   initial_sidebar_state="expanded")
 
-# logo at top of the sidebar, links back to the landing site
+# GreenWings logo at the top of the sidebar, clickable back to the landing site.
 _logo = Path(__file__).resolve().parent / "assets" / "logo.png"
+_logo_uri = ""
 if _logo.exists():
+    _logo_uri = "data:image/png;base64," + base64.b64encode(_logo.read_bytes()).decode()
     try:
         st.logo(str(_logo), link=LANDING_URL, size="large")
     except Exception:
@@ -41,17 +45,16 @@ footer{ visibility:hidden; }
 [data-testid="stDecoration"]{ display:none; }
 .block-container{ padding-top:1.4rem; }
 hr{ border-color:var(--line); }
-/* Back-to-Home link, in normal flow at the top of every page (mobile-safe) */
-a.gw-home{ display:inline-block; background:var(--accent); color:#fff !important;
-  text-decoration:none; font-family:'Oswald',sans-serif; font-weight:600; font-size:.92rem;
-  padding:.45rem 1rem; border-radius:999px; margin-bottom:.4rem; }
-a.gw-home:hover{ background:var(--accent-ink); }
+/* Clickable GreenWings logo at the top of every page (returns to Home) */
+a.gw-home{ display:inline-block; margin:0 0 .3rem; line-height:0; }
+a.gw-home img{ height:44px; width:auto; }
 </style>
 """, unsafe_allow_html=True)
 
-# "Back to Home" button at the top of every page (rendered by the router before the page).
-st.markdown(f'<a class="gw-home" href="{LANDING_URL}" target="_self">&larr; Home</a>',
-            unsafe_allow_html=True)
+# Clickable logo -> Home (landing). Rendered by the router at the top of every page.
+if _logo_uri:
+    st.markdown(f'<a class="gw-home" href="{LANDING_URL}" target="_self" title="Home">'
+                f'<img src="{_logo_uri}" alt="GreenWings AI - Home"></a>', unsafe_allow_html=True)
 
 # ---------------- tools only (clean URLs, back-link via logo) ------------
 pages = [
